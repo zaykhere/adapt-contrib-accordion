@@ -7,7 +7,7 @@
     "ariaRegion": {
       "type": "string",
       "required": true,
-      "default": "List of expandable sectionss. Select each button to expand the content.",
+      "default": "Lista de secciones ampliables. Seleccione cada botón para expandir el contenido.",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -25,28 +25,29 @@
       "type": "string",
       "required": false,
       "default": "",
+      "title": "Instrucción",
       "inputType": "Text",
       "validators": [],
-      "help": "This is the instructions text",
+      "help": "Este es el texto de las instrucciones.",
       "translatable": true
     },
     "_setCompletionOn": {
       "type": "string",
       "required": false,
       "default": "allItems",
-      "title": "Set completion on:",
+      "title": "Establecer finalización en:",
       "enum": ["inview", "allItems"],
       "inputType": {
         "type": "Select",
         "options": ["inview", "allItems"]
       },
       "validators": [],
-      "help": "Whether completionss is based on the learner having viewed all the accordion items - or just having viewed the component"
+      "help": "Si las finalizaciones se basan en que el alumno haya visto todos los elementos de acordeón, o simplemente haya visto el componente."
     },
     "_items": {
       "type": "array",
       "required": true,
-      "title": "Items",
+      "title": "Elementos",
       "items": {
         "type": "object",
         "required": true,
@@ -55,26 +56,26 @@
             "type": "string",
             "required": true,
             "inputType": "Text",
-            "title": "Item Title",
+            "title": "Título del artículo",
             "default": "",
             "validators": ["required"],
-            "help": "This is the itemyy title",
+            "help": "Este es el título del artículo.",
             "translatable": true
           },
           "body": {
             "type": "string",
             "required": true,
             "inputType": "TextArea",
-            "title": "Item Body",
+            "title": "Cuerpo del elemento",
             "default": "",
             "validators": ["required"],
-            "help": "This is the item body text that is hidden until the item title is clicked on",
+            "help": "Este es el texto del cuerpo del elemento que está oculto hasta que se hace clic en el título del elemento",
             "translatable": true
           },
           "_graphic": {
             "type": "object",
             "required": false,
-            "title": "Graphic",
+            "title": "Gráfica",
             "properties": {
               "alt": {
                 "type": "string",
@@ -82,7 +83,7 @@
                 "default": "",
                 "inputType": "Text",
                 "validators": [],
-                "help": "A description of the image; required when it has meaning that must be conveyed to the learner. For 'decorative' images, leave this blank.",
+                "help": "Una descripción de la imagen; requerido cuando tiene un significado que debe transmitirse al alumno. Para imágenes 'decorativas', déjelo en blanco.",
                 "translatable": true
               },
               "src": {
@@ -91,7 +92,7 @@
                 "default": "",
                 "inputType": "Asset:image",
                 "validators": [],
-                "help": "Optional image which will be rendered with the item body text"
+                "help": "Imagen opcional que se representará con el texto del cuerpo del elemento"
               },
               "attribution": {
                 "type":"string",
@@ -99,7 +100,7 @@
                 "default": "",
                 "inputType": "Text",
                 "validators": [],
-                "help": "Text to be displayed as an attribution",
+                "help": "Texto que se mostrará como una atribución",
                 "translatable": true
               }
             }
@@ -111,7 +112,7 @@
             "title": "Classes",
             "inputType": "Text",
             "validators": [],
-            "help": "Custom classes that are applied to the accordion item. Supported classes 'align-image-left' and 'align-image-right' are available to align item image to the left or right in desktop view. On smaller screens the item image defaults underneath the item body text. Additional classes can be used but they must be predefined in one of the Less files. Separate multiple classes with a space."
+            "help": "Clases personalizadas que se aplican al elemento de acordeón. Las clases admitidas 'align-image-left' y 'align-image-right' están disponibles para alinear la imagen del elemento a la izquierda o a la derecha en la vista de escritorio. En pantallas más pequeñas, la imagen del elemento está predeterminada debajo del texto del cuerpo del elemento. Se pueden usar clases adicionales, pero deben estar predefinidas en uno de los archivos Less. Separe varias clases con un espacio."
           }
         }
       }
@@ -120,19 +121,19 @@
       "type": "boolean",
       "required": false,
       "default": true,
-      "title": "Items should auto-collapse",
+      "title": "Los elementos deben contraerse automáticamente",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If disabled, upon expansion of an accordion item, any previously expanded items will not be collapsed"
+      "help": "Si está deshabilitado, al expandir un elemento de acordeón, los elementos expandidos anteriormente no se colapsarán"
     },
     "_shouldExpandFirstItem": {
       "type": "boolean",
       "required": false,
       "default": false,
-      "title": "First item should be expanded",
+      "title": "El primer elemento debe expandirse",
       "inputType": "Checkbox",
       "validators": [],
-      "help": "If enabled, the first item will be expanded by default"
+      "help": "Si está habilitado, el primer elemento se expandirá de forma predeterminada"
     }
   }
 }
