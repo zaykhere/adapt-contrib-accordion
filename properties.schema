@@ -8,6 +8,7 @@
       "type": "string",
       "required": true,
       "default": "Lista de secciones ampliables. Seleccione cada botón para expandir el contenido.",
+      "title": "Región de Aria",
       "inputType": "Text",
       "validators": [],
       "translatable": true
@@ -17,6 +18,7 @@
     "_supportedLayout": {
       "type": "string",
       "required": true,
+      "title": "Diseño compatible",
       "enum": ["full-width", "half-width", "both"],
       "default": "full-width",
       "editorOnly": true
@@ -90,6 +92,7 @@
                 "type": "string",
                 "required": false,
                 "default": "",
+                "title": "Fuente de imagen",
                 "inputType": "Asset:image",
                 "validators": [],
                 "help": "Imagen opcional que se representará con el texto del cuerpo del elemento"
@@ -99,6 +102,7 @@
                 "required": false,
                 "default": "",
                 "inputType": "Text",
+                "title": "Atribución",
                 "validators": [],
                 "help": "Texto que se mostrará como una atribución",
                 "translatable": true
@@ -109,7 +113,7 @@
             "type": "string",
             "required": false,
             "default": "",
-            "title": "Classes",
+            "title": "Clases",
             "inputType": "Text",
             "validators": [],
             "help": "Clases personalizadas que se aplican al elemento de acordeón. Las clases admitidas 'align-image-left' y 'align-image-right' están disponibles para alinear la imagen del elemento a la izquierda o a la derecha en la vista de escritorio. En pantallas más pequeñas, la imagen del elemento está predeterminada debajo del texto del cuerpo del elemento. Se pueden usar clases adicionales, pero deben estar predefinidas en uno de los archivos Less. Separe varias clases con un espacio."
