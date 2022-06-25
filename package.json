@@ -2,7 +2,7 @@
   "name": "adapt-contrib-accordion",
   "version": "7.0.0",
   "framework": ">=5.19.1",
-  "homepage": "https://github.com/adaptlearning/adapt-contrib-accordion",
+  "homepage": "https://github.com/zaykhere/adapt-contrib-accordion",
   "bugs": "https://github.com/adaptlearning/adapt-contrib-accordion/issues",
   "component" : "accordion",
   "targetAttribute": "_accordion",
